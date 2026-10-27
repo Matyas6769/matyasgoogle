@@ -4,27 +4,34 @@
 
 :root {
     color-scheme: light;
-    --text-color: #fff7eb;
-    --muted-text-color: #f0dfc9;
-    --input-background: #fffaf1;
-    --input-border: #c9ad8b;
-    --button-background: #f4e6d1;
-    --button-text: #38291e;
-    --button-border: #d8bd9b;
+    --page-background: #fff;
+    --text-color: #202124;
+    --muted-text-color: #70757a;
+    --input-background: #fff;
+    --input-border: #dfe1e5;
+    --button-background: #f8f9fa;
+    --button-text: #3c4043;
+    --button-border: #f8f9fa;
+}
+
+body.dark-theme {
+    color-scheme: dark;
+    --page-background: #202124;
+    --text-color: #e8eaed;
+    --muted-text-color: #9aa0a6;
+    --input-background: #303134;
+    --input-border: #5f6368;
+    --button-background: #303134;
+    --button-text: #e8eaed;
+    --button-border: #5f6368;
 }
 
 body {
-    background-color: #ead5b6;
-    background-image:
-        linear-gradient(rgb(0 0 0 / 38%), rgb(0 0 0 / 38%)),
-        url("autumn-wallpaper.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    background: var(--page-background);
     color: var(--text-color);
-    min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    transition: background-color 180ms ease, color 180ms ease;
 }
 
 a {
@@ -45,6 +52,26 @@ a:hover {
     padding: 20px 28px;
 }
 
+.theme-toggle {
+    background: var(--button-background);
+    border: 1px solid var(--button-border);
+    border-radius: 4px;
+    color: var(--button-text);
+    cursor: pointer;
+    font: inherit;
+    font-size: 13px;
+    padding: 8px 12px;
+}
+
+.theme-toggle:hover {
+    border-color: #9aa0a6;
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid #4285f4;
+    outline-offset: 2px;
+}
+
 .home {
     margin: 105px auto 0;
     max-width: 584px;
@@ -55,14 +82,10 @@ a:hover {
 .wordmark {
     font-family: "Product Sans", "Google Sans", Arial, sans-serif;
     font-size: 84px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: -7px;
     line-height: 1;
     margin: 0 0 29px;
-}
-
-.wordmark > span:not(.image-label) {
-    color: #fff;
 }
 
 .blue {
@@ -85,7 +108,7 @@ a:hover {
     background: var(--input-background);
     border: 1px solid var(--input-border);
     border-radius: 24px;
-    color: #202124;
+    color: var(--text-color);
     font-size: 16px;
     height: 46px;
     outline: none;
@@ -140,7 +163,7 @@ a:hover {
 }
 
 .advanced-header h1 {
-    color: #ffd1a3;
+    color: #d93025;
     font-size: 20px;
     font-weight: 400;
     margin: 22px 0 0;
@@ -173,7 +196,7 @@ a:hover {
     background: var(--input-background);
     border: 1px solid var(--input-border);
     border-radius: 1px;
-    color: #202124;
+    color: var(--text-color);
     font-size: 13px;
     height: 29px;
     padding: 4px 8px;
@@ -207,154 +230,6 @@ a:hover {
 
 .advanced-submit input:hover {
     background: #357ae8;
-}
-
-.forms-main {
-    margin: 34px auto 100px;
-    max-width: 1080px;
-    padding: 0 24px;
-}
-
-.forms-main h1 {
-    margin: 0 0 10px;
-}
-
-.forms-intro {
-    margin: 0 0 24px;
-}
-
-.forms-panel {
-    background: rgb(255 250 241 / 96%);
-    border: 1px solid var(--input-border);
-    border-radius: 12px;
-    box-shadow: 0 12px 36px rgb(0 0 0 / 24%);
-    color: #38291e;
-    padding: 28px;
-}
-
-.forms-panel h2 {
-    font-size: 19px;
-    margin: 0 0 20px;
-}
-
-.form-grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.form-field {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-}
-
-.form-field label,
-.form-field legend {
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.form-field input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]),
-.form-field select,
-.form-field textarea {
-    background: #fff;
-    border: 1px solid #b9a58d;
-    border-radius: 5px;
-    color: #202124;
-    font: inherit;
-    min-height: 40px;
-    padding: 8px 10px;
-    width: 100%;
-}
-
-.form-field input[type="file"] {
-    padding: 7px;
-}
-
-.form-field input[type="color"] {
-    background: #fff;
-    border: 1px solid #b9a58d;
-    border-radius: 5px;
-    height: 40px;
-    padding: 4px;
-    width: 100%;
-}
-
-.form-field input[type="range"] {
-    accent-color: #b85d36;
-    width: 100%;
-}
-
-.form-field textarea {
-    min-height: 110px;
-    resize: vertical;
-}
-
-.form-field fieldset {
-    border: 1px solid #c9ad8b;
-    border-radius: 6px;
-    margin: 0;
-    min-height: 100%;
-    padding: 12px;
-}
-
-.choice-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 18px;
-    margin-top: 8px;
-}
-
-.choice-list label {
-    align-items: center;
-    display: inline-flex;
-    font-weight: normal;
-    gap: 7px;
-}
-
-.form-actions {
-    border-top: 1px solid #d8c6ae;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 26px;
-    padding-top: 20px;
-}
-
-.form-actions button,
-.form-actions input {
-    background: #f4e6d1;
-    border: 1px solid #b9a58d;
-    border-radius: 5px;
-    color: #38291e;
-    cursor: pointer;
-    font: inherit;
-    padding: 10px 16px;
-}
-
-.form-actions .primary-action {
-    background: #8c472d;
-    border-color: #8c472d;
-    color: #fff;
-}
-
-.form-actions input[type="image"] {
-    border-radius: 5px;
-    height: 40px;
-    object-fit: cover;
-    width: 72px;
-}
-
-.form-actions button:hover,
-.form-actions input:hover {
-    filter: brightness(.94);
-}
-
-.form-note {
-    color: #705b49;
-    font-size: 13px;
-    margin: 18px 0 0;
 }
 
 .visually-hidden {
@@ -428,14 +303,5 @@ a:hover {
 
     .advanced-submit {
         margin-left: 0;
-    }
-
-    .forms-main {
-        margin-top: 24px;
-        padding: 0 14px;
-    }
-
-    .forms-panel {
-        padding: 18px;
     }
 }

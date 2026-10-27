@@ -10,8 +10,7 @@
         <nav class="top-nav" aria-label="Search options">
             <a href="image.html">Images</a>
             <a href="advanced.html">Advanced Search</a>
-            <a href="forms.html">Form elements</a>
-            <a href="https://github.com/Matyas6769/googlesearch/blob/main/citace.md">Citations</a>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
         </nav>
 
         <main class="home">
@@ -29,12 +28,14 @@
         </main>
         <footer class="ai-credit">Made by AI - Copilot  </footer>
         <nav class="validator-links" aria-label="Validators">
-            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmatyas6769.github.io%2Fmatyasgoogle%2Findex.html" aria-label="Validate HTML">
+            <a id="html-validator" href="https://validator.w3.org/nu/" aria-label="Validate HTML">
                 <img src="https://www.w3.org/Icons/valid-html401" alt="">
             </a>
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatyas6769.github.io%2Fmatyasgoogle%2Fstyle.css" aria-label="Validate CSS">
+            <a id="css-validator" href="https://jigsaw.w3.org/css-validator/" aria-label="Validate CSS">
                 <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="">
             </a>
         </nav>
+        <script src="validators.js"></script>
+        <script src="theme.js"></script>
     </body>
 </html>
