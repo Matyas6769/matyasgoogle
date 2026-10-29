@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Vyhledávání obrázků Google</title>
+        <title>Google Image Search</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav class="top-nav" aria-label="Možnosti vyhledávání">
-            <a href="index.html">Vyhledávání Google</a>
-            <a href="advanced.html">Rozšířené vyhledávání</a>
-            <a href="forms.html">Formuláře</a>
-            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Tmavý režim</button>
+        <nav class="top-nav" aria-label="Search options">
+            <a href="index.html">Google Search</a>
+            <a href="advanced.html">Advanced Search</a>
+            <a href="forms.html">Forms</a>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
         </nav>
 
         <main class="home">
-            <h1 class="wordmark image-wordmark" aria-label="Google Obrázky">
-                <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span><span class="image-label">Obrázky</span>
+            <h1 class="wordmark image-wordmark" aria-label="Google Images">
+                <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span><span class="image-label">Images</span>
             </h1>
             <form action="https://www.google.com/search" method="get">
-                <label class="visually-hidden" for="image-query">Hledat obrázky</label>
+                <label class="visually-hidden" for="image-query">Search images</label>
                 <input class="search-box" id="image-query" type="text" name="q" autocomplete="off" autofocus>
                 <input type="hidden" name="tbm" value="isch">
                 <div class="search-buttons">
-                    <input class="button" type="submit" value="Hledat Google">
+                    <input class="button" type="submit" value="Google Search">
                 </div>
             </form>
         </main>
         <footer class="site-footer">
             <div class="footer-links">
-                <a href="https://github.com/Matyas6769/matyasgoogle/blob/main/citace.md">Citace a zdroje</a>
+                <a href="https://github.com/Matyas6769/matyasgoogle/blob/main/citace.md">Citations and sources</a>
                 <a href="https://github.com/Matyas6769">Portfolio (GitHub)</a>
             </div>
-            <nav class="validator-links" aria-label="Validátory">
-                <a id="html-validator" href="https://validator.w3.org/nu/" aria-label="Validovat HTML">
+            <nav class="validator-links" aria-label="Validators">
+                <a id="html-validator" href="https://validator.w3.org/nu/" aria-label="Validate HTML">
                     <img src="https://www.w3.org/Icons/valid-html401" alt="">
                 </a>
-                <a id="css-validator" href="https://jigsaw.w3.org/css-validator/" aria-label="Validovat CSS">
+                <a id="css-validator" href="https://jigsaw.w3.org/css-validator/" aria-label="Validate CSS">
                     <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="">
                 </a>
             </nav>

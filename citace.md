@@ -1,35 +1,35 @@
-# Citace a použité zdroje
+# Citations and Sources
 
-## Webové zdroje
+## Web sources
 
-- Google. *Vyhledávání Google* [online]. Cílová adresa vyhledávacích formulářů. [cit. 2026-10-29]. Dostupné z: <https://www.google.com/search>
-- WHATWG. *HTML Living Standard* [online]. Technická reference k použitým prvkům HTML a formulářům. [cit. 2026-10-29]. Dostupné z: <https://html.spec.whatwg.org/>
-- W3C. *CSS Snapshot 2023* [online]. Přehled specifikací CSS použitých při tvorbě vzhledu. [cit. 2026-10-29]. Dostupné z: <https://www.w3.org/TR/css-2023/>
-- W3C. *Nu Html Checker* [online]. HTML validátor odkazovaný na stránkách projektu. [cit. 2026-10-29]. Dostupné z: <https://validator.w3.org/nu/>
-- W3C. *CSS Validation Service* [online]. CSS validátor odkazovaný na stránkách projektu. [cit. 2026-10-29]. Dostupné z: <https://jigsaw.w3.org/css-validator/>
-- W3C. *Valid HTML 4.01 badge* [obrázek online]. Obrázek odkazu na HTML validátor. [cit. 2026-10-29]. Dostupné z: <https://www.w3.org/Icons/valid-html401>
-- W3C. *CSS Validation Service badge* [obrázek online]. Obrázek odkazu na CSS validátor. [cit. 2026-10-29]. Dostupné z: <https://jigsaw.w3.org/css-validator/images/vcss>
+- Google. *Google Search* [online]. Destination for the search forms. [accessed 2026-10-29]. Available at: <https://www.google.com/search>
+- WHATWG. *HTML Living Standard* [online]. Technical reference for the HTML elements and form controls used in the project. [accessed 2026-10-29]. Available at: <https://html.spec.whatwg.org/>
+- W3C. *CSS Snapshot 2023* [online]. Overview of the CSS specifications used to create the page styles. [accessed 2026-10-29]. Available at: <https://www.w3.org/TR/css-2023/>
+- W3C. *Nu Html Checker* [online]. HTML validator linked from the project pages. [accessed 2026-10-29]. Available at: <https://validator.w3.org/nu/>
+- W3C. *CSS Validation Service* [online]. CSS validator linked from the project pages. [accessed 2026-10-29]. Available at: <https://jigsaw.w3.org/css-validator/>
+- W3C. *Valid HTML 4.01 badge* [online image]. Image linked to the HTML validator. [accessed 2026-10-29]. Available at: <https://www.w3.org/Icons/valid-html401>
+- W3C. *CSS Validation Service badge* [online image]. Image linked to the CSS validator. [accessed 2026-10-29]. Available at: <https://jigsaw.w3.org/css-validator/images/vcss>
 
-## Použití AI a prompty
+## AI use and prompts
 
-Stránky a jejich úpravy byly vytvořeny s pomocí AI asistenta v prostředí VS Code. Následující prompty jsou zpětně sestavené shrnutí zadání, nikoli doslovný přepis původní konverzace:
+The pages and their updates were created with the assistance of an AI assistant in VS Code. The following prompts are reconstructed summaries of the requests, not verbatim transcripts of the original conversation:
 
-### Ukázka formulářových prvků
+### Form elements showcase
 
-> Vytvoř v projektu Google Search novou stránku s ukázkou co největšího množství HTML formulářových prvků. Použij textová, číselná, datumová a kontaktní pole, výběrové seznamy, checkboxy, radio tlačítka, textarea a tlačítka. Zachovej společný vzhled a navigaci projektu.
+> Create a new page in the Google Search project showcasing as many HTML form controls as possible. Include text, number, date, and contact fields, select lists, checkboxes, radio buttons, a textarea, and buttons. Keep the project's shared styling and navigation.
 
-### Odkazy na validátory, zdroje a portfolio
+### Validator, source, and portfolio links
 
-> Na každé stránce projektu přidej odkazy na validaci HTML a CSS, soubor s citacemi a portfolio autora. Odkazy na validátory nastav tak, aby pracovaly s aktuální stránkou.
+> Add links to HTML and CSS validation, the citations file, and the author's portfolio to every project page. Configure the validator links to validate the current page.
 
-### Rozložení zápatí
+### Footer layout
 
-> Odkaz na citace a portfolio umísti vlevo dole, odkazy na HTML a CSS validátory vpravo dole. Rozložení musí fungovat i na menších obrazovkách.
+> Place the citations and portfolio links in the bottom-left corner, and the HTML and CSS validator links in the bottom-right corner. Make the layout work on smaller screens too.
 
-### Překlad do češtiny
+### Translate the pages into English
 
-> Přelož veškeré texty na stránkách projektu do češtiny, včetně navigace, popisků formulářů, tlačítek a přístupných názvů. Nastav správný jazyk dokumentů.
+> Translate all text on the project pages into English, including navigation, form labels, buttons, and accessible names. Set the correct document language.
 
-## Portfolio autora
+## Author's portfolio
 
-GitHub profil autora projektu: <https://github.com/Matyas6769>
+Author's GitHub profile: <https://github.com/Matyas6769>

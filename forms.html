@@ -1,170 +1,170 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ukázka formulářových prvků</title>
+        <title>Form Elements Showcase</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav class="top-nav" aria-label="Možnosti vyhledávání">
-            <a href="index.html">Vyhledávání Google</a>
-            <a href="image.html">Obrázky</a>
-            <a href="advanced.html">Rozšířené vyhledávání</a>
-            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Tmavý režim</button>
+        <nav class="top-nav" aria-label="Search options">
+            <a href="index.html">Google Search</a>
+            <a href="image.html">Images</a>
+            <a href="advanced.html">Advanced Search</a>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
         </nav>
 
         <main class="forms-main">
-            <h1>Formulářové prvky</h1>
-            <p class="forms-intro">Ukázka běžných ovládacích prvků formulářů v HTML.</p>
+            <h1>Form Elements</h1>
+            <p class="forms-intro">A showcase of common HTML form controls.</p>
             <form>
                 <div class="forms-grid">
                     <fieldset class="form-card">
-                        <legend>Textová a kontaktní pole</legend>
+                        <legend>Text and Contact Fields</legend>
                         <div class="form-field">
-                            <label for="full-name">Jméno</label>
-                            <input id="full-name" name="name" type="text" placeholder="Jana Nováková">
+                            <label for="full-name">Name</label>
+                            <input id="full-name" name="name" type="text" placeholder="Jane Smith">
                         </div>
                         <div class="form-field">
-                            <label for="email">E-mailová adresa</label>
-                            <input id="email" name="email" type="email" placeholder="jana@example.cz">
+                            <label for="email">Email address</label>
+                            <input id="email" name="email" type="email" placeholder="jane@example.com">
                         </div>
                         <div class="form-field">
-                            <label for="password">Heslo</label>
+                            <label for="password">Password</label>
                             <input id="password" type="password" autocomplete="new-password">
                         </div>
                         <div class="form-field">
-                            <label for="phone">Telefon</label>
-                            <input id="phone" name="phone" type="tel" placeholder="+420 123 456 789">
+                            <label for="phone">Telephone</label>
+                            <input id="phone" name="phone" type="tel" placeholder="+1 555 0100">
                         </div>
                         <div class="form-field">
-                            <label for="website">Webová stránka</label>
+                            <label for="website">Website</label>
                             <input id="website" name="website" type="url" placeholder="https://example.com">
                         </div>
                         <div class="form-field">
-                            <label for="search-term">Hledání s návrhy</label>
+                            <label for="search-term">Search with suggestions</label>
                             <input id="search-term" name="search" type="search" list="search-suggestions">
                             <datalist id="search-suggestions">
-                                <option value="Google Search">Vyhledávání Google
-                                <option value="Image Search">Vyhledávání obrázků
-                                <option value="Advanced Search">Rozšířené vyhledávání
+                                <option value="Google Search">Google Search
+                                <option value="Image Search">Image Search
+                                <option value="Advanced Search">Advanced Search
                             </datalist>
                         </div>
                     </fieldset>
 
                     <fieldset class="form-card">
-                        <legend>Datum a čísla</legend>
+                        <legend>Dates and Numbers</legend>
                         <div class="form-field">
-                            <label for="quantity">Počet</label>
+                            <label for="quantity">Quantity</label>
                             <input id="quantity" name="quantity" type="number" min="1" max="20" value="2">
                         </div>
                         <div class="form-field">
-                            <label for="birthday">Datum</label>
+                            <label for="birthday">Date</label>
                             <input id="birthday" name="date" type="date">
                         </div>
                         <div class="form-field">
-                            <label for="meeting-time">Čas</label>
+                            <label for="meeting-time">Time</label>
                             <input id="meeting-time" name="time" type="time">
                         </div>
                         <div class="form-field">
-                            <label for="appointment">Datum a čas</label>
+                            <label for="appointment">Date and time</label>
                             <input id="appointment" name="appointment" type="datetime-local">
                         </div>
                         <div class="form-field">
-                            <label for="month">Měsíc</label>
+                            <label for="month">Month</label>
                             <input id="month" name="month" type="month">
                         </div>
                         <div class="form-field">
-                            <label for="week">Týden</label>
+                            <label for="week">Week</label>
                             <input id="week" name="week" type="week">
                         </div>
                         <div class="form-field">
-                            <label for="satisfaction">Spokojenost</label>
+                            <label for="satisfaction">Satisfaction</label>
                             <input id="satisfaction" name="satisfaction" type="range" min="0" max="10" value="7">
                             <output id="satisfaction-value" for="satisfaction">7</output>/10
                         </div>
                     </fieldset>
 
                     <fieldset class="form-card">
-                        <legend>Výběr možností</legend>
+                        <legend>Choose an Option</legend>
                         <div class="form-field">
-                            <label for="topic">Téma</label>
+                            <label for="topic">Topic</label>
                             <select id="topic" name="topic">
-                                <option value="">Vyberte téma</option>
-                                <optgroup label="Vyhledávání">
-                                    <option value="web">Vyhledávání na webu</option>
-                                    <option value="images">Vyhledávání obrázků</option>
+                                <option value="">Select a topic</option>
+                                <optgroup label="Search">
+                                    <option value="web">Web search</option>
+                                    <option value="images">Image search</option>
                                 </optgroup>
-                                <optgroup label="Ostatní">
-                                    <option value="help">Nápověda a zpětná vazba</option>
+                                <optgroup label="Other">
+                                    <option value="help">Help and feedback</option>
                                 </optgroup>
                             </select>
                         </div>
                         <div class="form-field">
-                            <label for="languages">Jazyky (lze vybrat více možností)</label>
+                            <label for="languages">Languages (select more than one)</label>
                             <select id="languages" name="languages" multiple size="4">
-                                <option>Angličtina</option>
-                                <option>Čeština</option>
-                                <option>Francouzština</option>
-                                <option>Španělština</option>
+                                <option>English</option>
+                                <option>Czech</option>
+                                <option>French</option>
+                                <option>Spanish</option>
                             </select>
                         </div>
                         <div class="form-field">
-                            <span>Upřednostňovaný způsob kontaktu</span>
+                            <span>Preferred contact method</span>
                             <div class="form-options">
-                                <label><input type="radio" name="contact" value="email" checked> E-mail</label>
-                                <label><input type="radio" name="contact" value="phone"> Telefon</label>
-                                <label><input type="radio" name="contact" value="none"> Bez preference</label>
+                                <label><input type="radio" name="contact" value="email" checked> Email</label>
+                                <label><input type="radio" name="contact" value="phone"> Phone</label>
+                                <label><input type="radio" name="contact" value="none"> No preference</label>
                             </div>
                         </div>
                         <div class="form-options">
-                            <label><input type="checkbox" name="updates" value="yes"> Chci dostávat novinky</label>
-                            <label><input type="checkbox" name="terms" value="accepted"> Souhlasím s podmínkami</label>
+                            <label><input type="checkbox" name="updates" value="yes"> Send me updates</label>
+                            <label><input type="checkbox" name="terms" value="accepted"> I agree to the terms</label>
                         </div>
                     </fieldset>
 
                     <fieldset class="form-card">
-                        <legend>Soubory, barva a zpráva</legend>
+                        <legend>Files, Color and Message</legend>
                         <div class="form-field">
-                            <label for="favorite-color">Oblíbená barva</label>
+                            <label for="favorite-color">Favorite color</label>
                             <input id="favorite-color" name="color" type="color" value="#4285f4">
                         </div>
                         <div class="form-field">
-                            <label for="attachment">Nahrát soubor</label>
+                            <label for="attachment">Upload a file</label>
                             <input id="attachment" name="attachment" type="file">
                         </div>
                         <div class="form-field">
-                            <label for="message">Zpráva</label>
-                            <textarea id="message" name="message" placeholder="Sem napište zprávu…"></textarea>
-                            <span class="form-help">Ukázka víceřádkového textového pole.</span>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+                            <span class="form-help">This is an example multiline text field.</span>
                         </div>
                         <div class="form-field">
-                            <label for="progress-example">Průběh</label>
+                            <label for="progress-example">Progress</label>
                             <progress id="progress-example" value="65" max="100">65%</progress>
                         </div>
                         <div class="form-field">
-                            <label for="meter-example">Měřítko</label>
+                            <label for="meter-example">Meter</label>
                             <meter id="meter-example" min="0" max="100" low="30" high="80" optimum="90" value="72">72%</meter>
                         </div>
                     </fieldset>
                 </div>
                 <div class="form-actions">
-                    <button type="button">Ukázkové tlačítko</button>
-                    <button type="reset">Vymazat formulář</button>
+                    <button type="button">Example button</button>
+                    <button type="reset">Reset form</button>
                 </div>
             </form>
         </main>
 
         <footer class="site-footer">
             <div class="footer-links">
-                <a href="https://github.com/Matyas6769/matyasgoogle/blob/main/citace.md">Citace a zdroje</a>
+                <a href="https://github.com/Matyas6769/matyasgoogle/blob/main/citace.md">Citations and sources</a>
                 <a href="https://github.com/Matyas6769">Portfolio (GitHub)</a>
             </div>
-            <nav class="validator-links" aria-label="Validátory">
-                <a id="html-validator" href="https://validator.w3.org/nu/" aria-label="Validovat HTML">
+            <nav class="validator-links" aria-label="Validators">
+                <a id="html-validator" href="https://validator.w3.org/nu/" aria-label="Validate HTML">
                     <img src="https://www.w3.org/Icons/valid-html401" alt="">
                 </a>
-                <a id="css-validator" href="https://jigsaw.w3.org/css-validator/" aria-label="Validovat CSS">
+                <a id="css-validator" href="https://jigsaw.w3.org/css-validator/" aria-label="Validate CSS">
                     <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="">
                 </a>
             </nav>
