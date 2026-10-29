@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Google Search</title>
+        <title>Vyhledávání Google</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav class="top-nav" aria-label="Search options">
-            <a href="image.html">Images</a>
-            <a href="advanced.html">Advanced Search</a>
-            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        <nav class="top-nav" aria-label="Možnosti vyhledávání">
+            <a href="image.html">Obrázky</a>
+            <a href="advanced.html">Rozšířené vyhledávání</a>
+            <a href="forms.html">Formuláře</a>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Tmavý režim</button>
         </nav>
 
         <main class="home">
@@ -18,23 +19,29 @@
                 <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
             </h1>
             <form action="https://www.google.com/search" method="get">
-                <label class="visually-hidden" for="query">Search</label>
+                <label class="visually-hidden" for="query">Hledat</label>
                 <input class="search-box" id="query" type="text" name="q" autocomplete="off" autofocus>
                 <div class="search-buttons">
-                    <input class="button" type="submit" value="Google Search">
-                    <input class="button" type="submit" name="btnI" value="I'm Feeling Lucky">
+                    <input class="button" type="submit" value="Hledat Google">
+                    <input class="button" type="submit" name="btnI" value="Zkusím štěstí">
                 </div>
             </form>
         </main>
-        <footer class="ai-credit">Made by AI - Copilot  </footer>
-        <nav class="validator-links" aria-label="Validators">
-            <a id="html-validator" href="https://validator.w3.org/nu/" aria-label="Validate HTML">
-                <img src="https://www.w3.org/Icons/valid-html401" alt="">
-            </a>
-            <a id="css-validator" href="https://jigsaw.w3.org/css-validator/" aria-label="Validate CSS">
-                <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="">
-            </a>
-        </nav>
+        <footer class="site-footer">
+            <div class="footer-links">
+                <span class="ai-credit">Vytvořeno s AI - Copilot</span>
+                <a href="https://github.com/Matyas6769/matyasgoogle/blob/main/citace.md">Citace a zdroje</a>
+                <a href="https://github.com/Matyas6769">Portfolio (GitHub)</a>
+            </div>
+            <nav class="validator-links" aria-label="Validátory">
+                <a id="html-validator" href="https://validator.w3.org/nu/" aria-label="Validovat HTML">
+                    <img src="https://www.w3.org/Icons/valid-html401" alt="">
+                </a>
+                <a id="css-validator" href="https://jigsaw.w3.org/css-validator/" aria-label="Validovat CSS">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="">
+                </a>
+            </nav>
+        </footer>
         <script src="validators.js"></script>
         <script src="theme.js"></script>
     </body>

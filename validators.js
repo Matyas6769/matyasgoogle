@@ -2,10 +2,8 @@ const htmlValidator = document.getElementById("html-validator");
 const cssValidator = document.getElementById("css-validator");
 
 const siteUrl = new URL("https://matyas6769.github.io/matyasgoogle/");
-const pageName = window.location.pathname.split("/").pop();
-const pageUrl = pageName === "image.html" || pageName === "advanced.html"
-    ? new URL(pageName, siteUrl)
-    : siteUrl;
+const pageName = window.location.pathname.split("/").pop() || "index.html";
+const pageUrl = new URL(pageName, siteUrl);
 const stylesheetUrl = new URL("style.css", siteUrl);
 
 const htmlValidatorUrl = new URL("https://validator.w3.org/nu/");

@@ -1,52 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Google Advanced Search</title>
+        <title>Rozšířené vyhledávání Google</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav class="top-nav" aria-label="Search options">
-            <a href="index.html">Google Search</a>
-            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        <nav class="top-nav" aria-label="Možnosti vyhledávání">
+            <a href="index.html">Vyhledávání Google</a>
+            <a href="image.html">Obrázky</a>
+            <a href="forms.html">Formuláře</a>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Tmavý režim</button>
         </nav>
 
         <header class="advanced-header">
-            <h1>Advanced Search</h1>
+            <h1>Rozšířené vyhledávání</h1>
         </header>
         <main class="advanced-main">
-            <h2>Find pages with…</h2>
+            <h2>Najít stránky obsahující…</h2>
             <form action="https://www.google.com/search" method="get">
                 <div class="advanced-row">
-                    <label for="all-words">all these words:</label>
+                    <label for="all-words">všechna tato slova:</label>
                     <input id="all-words" type="text" name="as_q">
                 </div>
                 <div class="advanced-row">
-                    <label for="exact-phrase">this exact word or phrase:</label>
+                    <label for="exact-phrase">přesnou frázi:</label>
                     <input id="exact-phrase" type="text" name="as_epq">
                 </div>
                 <div class="advanced-row">
-                    <label for="any-words">any of these words:</label>
+                    <label for="any-words">alespoň jedno z těchto slov:</label>
                     <input id="any-words" type="text" name="as_oq">
                 </div>
                 <div class="advanced-row">
-                    <label for="none-words">none of these words:</label>
+                    <label for="none-words">žádné z těchto slov:</label>
                     <input id="none-words" type="text" name="as_eq">
                 </div>
                 <div class="advanced-submit">
-                    <input type="submit" value="Advanced Search">
+                    <input type="submit" value="Rozšířené vyhledávání">
                 </div>
             </form>
         </main>
-        <nav class="validator-links" aria-label="Validators">
-            <a id="html-validator" href="https://validator.w3.org/nu/" aria-label="Validate HTML">
-                <img src="https://www.w3.org/Icons/valid-html401" alt="">
-            </a>
-            <a id="css-validator" href="https://jigsaw.w3.org/css-validator/" aria-label="Validate CSS">
-                <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="">
-            </a>
-        </nav>
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a href="https://github.com/Matyas6769/matyasgoogle/blob/main/citace.md">Citace a zdroje</a>
+                <a href="https://github.com/Matyas6769">Portfolio (GitHub)</a>
+            </div>
+            <nav class="validator-links" aria-label="Validátory">
+                <a id="html-validator" href="https://validator.w3.org/nu/" aria-label="Validovat HTML">
+                    <img src="https://www.w3.org/Icons/valid-html401" alt="">
+                </a>
+                <a id="css-validator" href="https://jigsaw.w3.org/css-validator/" aria-label="Validovat CSS">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="">
+                </a>
+            </nav>
+        </footer>
         <script src="validators.js"></script>
         <script src="theme.js"></script>
     </body>

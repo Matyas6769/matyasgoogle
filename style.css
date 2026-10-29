@@ -30,6 +30,7 @@ body {
     background: var(--page-background);
     color: var(--text-color);
     margin: 0;
+    padding-bottom: 64px;
     font-family: Arial, sans-serif;
     transition: background-color 180ms ease, color 180ms ease;
 }
@@ -244,20 +245,37 @@ a:hover {
 }
 
 .ai-credit {
-    bottom: 16px;
     color: var(--muted-text-color);
     font-family: "Google Sans", "Product Sans", Arial, sans-serif;
     font-size: 12px;
-    left: 18px;
+}
+
+.site-footer {
+    align-items: center;
+    background: var(--page-background);
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    justify-content: space-between;
+    left: 0;
+    padding: 12px 18px;
     position: fixed;
+    right: 0;
+    z-index: 1;
+}
+
+.footer-links {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
 }
 
 .validator-links {
-    bottom: 12px;
     display: flex;
     gap: 14px;
-    position: fixed;
-    right: 18px;
+    margin-left: auto;
 }
 
 .validator-links a {
@@ -279,6 +297,131 @@ a:hover {
 
 .validator-links #css-validator img {
     border: 0;
+}
+
+.forms-main {
+    margin: 28px auto;
+    max-width: 960px;
+    padding: 0 24px;
+}
+
+.forms-main > h1 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.forms-intro {
+    color: var(--muted-text-color);
+    margin-top: 0;
+}
+
+.forms-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 26px;
+}
+
+.form-card {
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    min-width: 0;
+    padding: 20px;
+}
+
+.form-card legend,
+.form-card h2 {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0 6px;
+}
+
+.form-field {
+    display: grid;
+    gap: 7px;
+    margin: 14px 0;
+}
+
+.form-field > label,
+.form-card label {
+    font-size: 13px;
+}
+
+.form-field input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not([type="file"]),
+.form-field select,
+.form-field textarea {
+    background: var(--input-background);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    color: var(--text-color);
+    font: inherit;
+    min-height: 38px;
+    padding: 8px 10px;
+    width: 100%;
+}
+
+.form-field textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-options {
+    display: grid;
+    gap: 10px;
+    margin: 14px 0;
+}
+
+.form-options label {
+    align-items: center;
+    display: flex;
+    gap: 9px;
+}
+
+.form-field input[type="range"] {
+    accent-color: #4285f4;
+    width: 100%;
+}
+
+.form-field input[type="color"] {
+    background: var(--input-background);
+    border: 1px solid var(--input-border);
+    height: 40px;
+    padding: 3px;
+    width: 64px;
+}
+
+.form-field input[type="file"] {
+    color: var(--text-color);
+    font: inherit;
+}
+
+.form-help {
+    color: var(--muted-text-color);
+    font-size: 12px;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    background: var(--button-background);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    color: var(--button-text);
+    cursor: pointer;
+    font: inherit;
+    padding: 9px 14px;
+}
+
+.form-actions button[type="button"] {
+    background: #4285f4;
+    border-color: #4285f4;
+    color: #fff;
 }
 
 @media (max-width: 600px) {
@@ -303,5 +446,18 @@ a:hover {
 
     .advanced-submit {
         margin-left: 0;
+    }
+
+    .forms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer {
+        align-items: flex-end;
+        padding: 10px 12px;
+    }
+
+    .footer-links {
+        gap: 8px 12px;
     }
 }
